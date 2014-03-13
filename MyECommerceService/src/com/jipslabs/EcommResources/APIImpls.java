@@ -13,6 +13,8 @@ public class APIImpls {
 		idCounter = new AtomicInteger();
 	}
 	
+	//This method returns the customer information based on an id
+	
 	public String getCustomer(int id){
 		CustomerData cust = customerDb.get(id);
 		if(cust == null){
